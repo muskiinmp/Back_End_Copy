@@ -28,6 +28,9 @@ public class Produto {
 	public String nome;
 
 	public int quantidade;
+	
+	@NotBlank(message = "Foto é obrigatória")
+	public String foto;
 
 	@JsonFormat(shape = JsonFormat.Shape.STRING)
 	@NotNull(message = " Preço é obrigatório")
